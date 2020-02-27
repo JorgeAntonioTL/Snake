@@ -16,11 +16,7 @@ namespace Snake
         private PictureBox rectangulo = new PictureBox();
         public static int tama = 10, casilla=tama/2;
         public static int divLin = 600 / tama;
-        public static PictureBox cabeza_box = new PictureBox();
-        public static PictureBox cuerpo_box = new PictureBox();
-        public static PictureBox cola_box = new PictureBox();
-
-
+ 
 
         static int[,] esc = new int[tama, tama];
         private static System.Timers.Timer tiempo;
@@ -57,7 +53,6 @@ namespace Snake
         private static void vueltaTiempo(Object source, ElapsedEventArgs e)
         {
             Console.WriteLine("entro");
-            cabeza_box.Location = new Point(cabeza_box.Location.X+100, cabeza_box.Location.Y+0);
         }
         private void rectangulo_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
