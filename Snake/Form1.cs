@@ -16,7 +16,8 @@ namespace Snake
         private PictureBox rectangulo = new PictureBox();
         public static int tama = 10, casilla=tama/2;
         public static int divLin = 600 / tama;
- 
+
+
 
         static int[,] esc = new int[tama, tama];
         private static System.Timers.Timer tiempo;
