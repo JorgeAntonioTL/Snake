@@ -16,9 +16,6 @@ namespace Snake
         private PictureBox rectangulo = new PictureBox();
         public static int tama = 10, casilla=tama/2;
         public static int divLin = 600 / tama;
-        public static PictureBox cabeza_box = new PictureBox();
-        public static PictureBox cuerpo_box = new PictureBox();
-        public static PictureBox cola_box = new PictureBox();
 
 
 
@@ -41,9 +38,6 @@ namespace Snake
             rectangulo.Dock = DockStyle.Fill;
             rectangulo.BackColor = Color.White;
             rectangulo.Paint += new System.Windows.Forms.PaintEventHandler(this.rectangulo_Paint);
-            rectangulo.Paint += new System.Windows.Forms.PaintEventHandler(this.cabeza);
-            rectangulo.Paint += new System.Windows.Forms.PaintEventHandler(this.cuerpo);
-            rectangulo.Paint += new System.Windows.Forms.PaintEventHandler(this.cola);
 
             this.Controls.Add(rectangulo);
 
@@ -60,7 +54,6 @@ namespace Snake
         private static void vueltaTiempo(Object source, ElapsedEventArgs e)
         {
             Console.WriteLine("entro");
-            cabeza_box.Location = new Point(cabeza_box.Location.X+100, cabeza_box.Location.Y+0);
         }
         private void rectangulo_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
@@ -139,56 +132,5 @@ namespace Snake
             /*PartSnake serpi = new PartSnake();
             serpi.piezaSnake();
         }*/
-        public void cabeza(object sender, PaintEventArgs e)
-        {
-            
-            cabeza_box.Name = ("cabeza");
-            cabeza_box.Width = (divLin);
-            cabeza_box.Height = (divLin);
-            cabeza_box.Location = new Point(casilla, casilla);
-            Bitmap flagCabe = new Bitmap(divLin, divLin);
-            Graphics flagCabeza = Graphics.FromImage(flagCabe);
-            Graphics cabe = e.Graphics;
-            SolidBrush greenBrush = new SolidBrush(Color.Green);
-            RectangleF cabeRec = new RectangleF(casilla * divLin + 50, casilla * divLin + 50, divLin, divLin);
-            flagCabeza.FillRectangle(greenBrush, cabeRec);
-            //cabe.FillRectangle(greenBrush, cabeRec);
-            Graphics ojo = e.Graphics;
-            SolidBrush blackBrush = new SolidBrush(Color.Black);
-            RectangleF ojoCir = new RectangleF(casilla * divLin + 60, casilla * divLin + 57, 10, 10);
-            flagCabeza.FillEllipse(blackBrush, ojoCir);
-            cabeza_box.Image = flagCabe;
-            this.Controls.Add(cabeza_box);
-        }
-        public void cuerpo(object sender, PaintEventArgs e)
-        {
-            cuerpo_box.Name = ("cuerpo");
-            cuerpo_box.Width = (divLin);
-            cuerpo_box.Height = (divLin);
-            cuerpo_box.Location = new Point(casilla-divLin, casilla);
-            Graphics cuer = e.Graphics;
-            SolidBrush greenBrush = new SolidBrush(Color.Green);
-            RectangleF cuerRec = new RectangleF(casilla * divLin - (divLin) + 50, casilla * divLin + 50, divLin, divLin);
-            cuer.FillRectangle(greenBrush, cuerRec);
-        }
-        public void cola(object sender, PaintEventArgs e)
-        {
-            cola_box.Name = ("cola");
-            cola_box.Width = (divLin);
-            cola_box.Height = (divLin);
-            cola_box.Location = new Point(casilla-divLin*2, casilla);
-            Graphics cuer = e.Graphics;
-            SolidBrush greenBrush = new SolidBrush(Color.Green);
-            RectangleF cuerRec = new RectangleF(casilla * divLin - (divLin*2) + 50, casilla * divLin + 50, divLin, divLin);
-            cuer.FillRectangle(greenBrush, cuerRec);
-        }
-    }
-        public partial class PartSnake
-    {
-        public static int tama = 20, casilla = tama / 2;
-        public static float divLin = 600 / tama;
-        public void piezaSnake()
-        {   
-        }
     }
 }
