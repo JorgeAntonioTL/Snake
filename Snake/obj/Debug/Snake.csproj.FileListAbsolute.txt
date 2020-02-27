@@ -1,0 +1,9 @@
+C:\Users\Jorgito\Desktop\ESCRITORIO\CURSOS\VISUALSTUDIO\Snake\Snake\obj\Debug\Snake.csprojAssemblyReference.cache
+C:\Users\Jorgito\Desktop\ESCRITORIO\CURSOS\VISUALSTUDIO\Snake\Snake\obj\Debug\Snake.Form1.resources
+C:\Users\Jorgito\Desktop\ESCRITORIO\CURSOS\VISUALSTUDIO\Snake\Snake\obj\Debug\Snake.Properties.Resources.resources
+C:\Users\Jorgito\Desktop\ESCRITORIO\CURSOS\VISUALSTUDIO\Snake\Snake\obj\Debug\Snake.csproj.GenerateResource.cache
+C:\Users\Jorgito\Desktop\ESCRITORIO\CURSOS\VISUALSTUDIO\Snake\Snake\bin\Debug\Snake.exe.config
+C:\Users\Jorgito\Desktop\ESCRITORIO\CURSOS\VISUALSTUDIO\Snake\Snake\bin\Debug\Snake.exe
+C:\Users\Jorgito\Desktop\ESCRITORIO\CURSOS\VISUALSTUDIO\Snake\Snake\bin\Debug\Snake.pdb
+C:\Users\Jorgito\Desktop\ESCRITORIO\CURSOS\VISUALSTUDIO\Snake\Snake\obj\Debug\Snake.exe
+C:\Users\Jorgito\Desktop\ESCRITORIO\CURSOS\VISUALSTUDIO\Snake\Snake\obj\Debug\Snake.pdb
